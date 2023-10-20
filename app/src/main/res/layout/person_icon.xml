@@ -64,8 +64,8 @@
                 android:layout_height="wrap_content"
                 android:text="yesenia_yang@gnu.ac.in"
                 android:textSize="12dp"
-                tools:layout_editor_absoluteX="69dp"
-                tools:layout_editor_absoluteY="108dp">
+                tools:layout_editor_absoluteX="94dp"
+                tools:layout_editor_absoluteY="104dp">
 
             </TextView>
 
