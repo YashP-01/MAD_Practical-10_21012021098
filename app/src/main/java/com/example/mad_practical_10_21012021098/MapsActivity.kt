@@ -15,9 +15,18 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private lateinit var mMap: GoogleMap
     private lateinit var binding: ActivityMapsBinding
+    private var lat:Double = 0.0
+    private var log:Double = 0.0
+    private var title = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        val obj = intent.getSerializableExtra("Object") as Person
+        lat = obj.latitude
+        log = obj.longitude
+        title = obj.name
+        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
 
         binding = ActivityMapsBinding.inflate(layoutInflater)
         setContentView(binding.root)
